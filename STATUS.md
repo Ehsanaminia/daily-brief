@@ -7,6 +7,7 @@
 | 003 | Wed 25 Nov | What is a bond? | 9.7 min | Built (made Tue 24 Nov with Friday's data). Waiting for Ehsan's feedback |
 | 004 | Thu 26 Nov | Funds and ETFs | 10.1 min | Built with data to Wed 25 Nov |
 | 005 | Fri 27 Nov | Week 1 review (vocabulary sprint) | 9.3 min | Built |
+| 006 | Mon 30 Nov | Interest (week 2, day 1) | see below | Built 27 Nov with data to Fri 27 Nov (US stocks to Wed 25); gold Wed 25 corrected in audio |
 
 ## Decisions 27 Nov (Ehsan)
 - Eps 1 to 5 approved. Voice 5 to 10% faster (now +12%). Length is good.
@@ -15,7 +16,7 @@
 - Own project (own repo) for the podcast, and one thread (session) per episode.
 
 ## Next episodes
-- 006 Mon 30 Nov: Week 2, Interest (needs fresh data from Fri 27 Nov and Mon 30 Nov)
+- 007 Tue 1 Dec: Compounding
 
 ## Open items
 - **Data revisions (26 Nov):** the 20 Nov rows for Brent and gold changed in prices.csv after eps 1 and 3 were made. Both re-rendered with the corrected numbers. Check the data again before each episode (rows can be revised).

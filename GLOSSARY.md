@@ -28,3 +28,9 @@
 | 4 | Passive / active | Passive copies an index; active tries to beat it |
 | 4 | Expense ratio | The yearly fee of a fund, as a percentage of your money |
 | 4 | Diversification | Not putting all your eggs in one basket |
+| 6 | Interest | The price of borrowing money, paid by the borrower to the lender |
+| 6 | Interest rate | Interest as a percentage of the amount, usually per year |
+| 6 | Simple interest | Interest paid only on the original amount |
+| 6 | Compound interest | Interest earned on the interest too (more in ep 7) |
+| 6 | Basis point | One hundredth of a percentage point (30 bp = 0.3 points) |
+| 6 | Safe rate (yardstick) | The government rate every other investment must beat to be worth its risk |

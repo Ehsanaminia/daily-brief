@@ -1,0 +1,75 @@
+Good morning, and welcome to your Daily Brief. This is episode six, Monday, the thirtieth of November, and it is the start of week two: Money Basics. Quick recap of Friday. In week one you learned what an asset manager does, what a stock is, what a bond is, and what funds and E T Fs are. And you finished your first review. Today we start the foundation under all of it: interest. We'll look at the markets, learn what interest really is, practice an interview answer, and do a quiz. Let's go.
+
+[pause 1]
+
+Part one. The markets. First, an honest note about my data. The newest numbers I have go up to Friday, the twenty-seventh, but only partly. American stock markets were closed on Thursday for Thanksgiving, and Friday was a short session that is not in my data yet. So the last full American stock close I have is Wednesday, the twenty-fifth. I will not guess anything after that.
+
+On Wednesday, the S and P 500 closed at about seven thousand one hundred and eighty-three, down a quarter of a percent that day. The ten year American government rate was four point eight five percent. Remember that number, because it is today's lesson.
+
+On Thursday, European stocks rose about two percent, both the German DAX and the Euro Stoxx 50. Gold rose three and a half percent, to about three thousand six hundred and fifty-eight dollars an ounce. Brent oil fell two and a half percent, to about ninety-two dollars a barrel. On Friday, the only prices in my data are crypto and currencies. Bitcoin closed at about sixty-one thousand four hundred dollars, up almost one percent. And one euro cost about one point one dollars.
+
+One correction. In Friday's episode I said gold closed Wednesday at about three thousand six hundred and five dollars. The data has since been revised: Wednesday's close is now three thousand five hundred and thirty-six. Rows in the data can change after the fact, which is why I check them every time.
+
+Here is what to notice. Look at the ten year rate over two weeks. It was five point one five percent on Friday the thirteenth, and four point eight five on Wednesday the twenty-fifth. The rate fell by about thirty basis points, that is, three tenths of a percentage point. By the see-saw from episode three, when rates fall, existing bond prices rise. And as always: price data tells me what happened, not why. I did not find a published source for the reason, so I will not invent one.
+
+[pause 1.2]
+
+Part two. Today's lesson. Interest.
+
+Let's start with a real-life story. Your friend needs one thousand dollars today, and asks to borrow it from you for one year. You think: if I lend it, I can't use it myself for a year. And there is a chance my friend doesn't pay me back. So you say: fine, but you pay me fifty dollars extra. That fifty dollars is interest.
+
+Interest is the price of borrowing money. That's the whole idea. When you rent an apartment, you pay rent for using someone's apartment. When you borrow money, you pay interest for using someone's money. The owner gets paid for waiting, and for the risk.
+
+Why does it exist? Three reasons. One: waiting costs something. If you lend a thousand dollars, you can't spend it or invest it elsewhere in the meantime. Two: risk. The borrower might not pay you back. That is the credit risk from episode three. Three: prices in general tend to rise over time, so money loses buying power. We'll study that on Wednesday.
+
+Now the rate. The interest rate is the interest, as a percentage of the amount, usually per year. Fifty dollars on a thousand dollars is five percent per year. The rate is a price, a price for money. And like every price, it is set by supply and demand: how many people want to borrow, and how many want to lend. A riskier borrower pays a higher rate. A safer borrower pays a lower one.
+
+Who pays and who receives? The borrower pays interest, and the lender receives it. And here is the key insight: you are on both sides, every day. When you put money in a savings account, you are lending to the bank, and the bank pays you interest. When you borrow for a car or a house, you are the borrower, and you pay. A bank sits in the middle: it pays savers a lower rate, lends at a higher rate, and keeps the difference. When you buy a bond, you are the lender, and the coupon is your interest. The government or the company is the borrower.
+
+Now, simple versus compound. Simple interest is paid only on the original amount. Take one thousand dollars at five percent. Each year, you earn fifty dollars. After three years, you have earned one hundred and fifty dollars. Compound interest means that you earn interest on the interest too. The first year is the same: fifty dollars. But in the second year, you earn five percent on one thousand and fifty, not on one thousand. After three years, you have earned about one hundred and fifty-eight dollars, not one hundred and fifty. A small difference now. Over decades, a very big one. That is tomorrow's episode, so I will leave it there.
+
+Now the big question. Why do people say interest rates are the engine of finance? Because the rate is the price of money, and money is in everything. Let me connect it to what you already know.
+
+First, bonds. In episode three you learned the see-saw: when rates go up, existing bond prices go down. Now you know why. A bond pays a fixed coupon. If new bonds start paying a higher rate, the old bond with the lower coupon is less attractive, so its price must fall until it competes. A bond is simply a loan, and its price follows the price of money.
+
+Second, funds and fees. In episode four you saw that a one percent fee, taken every year, costs thousands over twenty years. That is the same math as interest, working against you. It's like paying a small interest rate to someone else, forever. Interest is everywhere, even where nobody calls it interest.
+
+Third, stocks and everything else. A company that wants to build a factory often borrows the money. If the rate is high, borrowing is expensive, and fewer projects make sense. If the rate is low, more projects make sense. Mortgages, car loans, company loans and government debt all depend on this price. And professionals use the safe government rate, like that four point eight five percent, as a starting point. Every other investment must offer more than that to be worth the risk. If the safe government loan pays you almost five percent a year, why would you accept a risky investment that promises less? So the safe rate is the yardstick, and everything else is priced against it. We will come back to this many times.
+
+One last point. Who controls the rate? Mostly, the market decides longer term rates, like the ten year. But the central bank, in America the Federal Reserve, sets a short term rate that influences all the others. Week five is about central banks, so we'll keep it simple for now.
+
+So, to summarize. Interest is the price of borrowing money. The rate is that price, per year, as a percentage. The borrower pays, the lender receives. Riskier borrowers pay more. And almost every price in finance, from bonds to funds to stocks, is connected to it.
+
+[pause 1.2]
+
+Part three. Interview corner. Here is a real interview question. What is an interest rate, and why does an asset manager care about it? Think about a thirty-second answer: what it is, why it matters, and an example. Say it out loud now.
+
+[pause 30]
+
+Here is a model answer, and yours can be different. An interest rate is the price of borrowing money, shown as a percentage per year. The borrower pays it and the lender receives it. An asset manager cares for three reasons. It changes the price of bonds: when rates rise, existing bonds fall. It is the safe return that every other investment is compared against. And it affects how expensive it is for companies to borrow, so it affects their profits. For example, the ten year American government rate fell from about five point one five to four point eight five percent in two weeks, so a manager holding bonds would pay close attention. Notice the pattern again: what it is, why it matters, an example.
+
+[pause 1.2]
+
+Part four. Quiz. Four questions. Say each answer out loud in the pause.
+
+Question one. What is interest, in one sentence?
+
+[pause 6]
+
+Interest is the price of borrowing money. Question two. Five percent a year on one thousand dollars, with simple interest. How much do you earn in one year?
+
+[pause 6]
+
+Fifty dollars. Question three. When interest rates go up, what happens to the price of an existing bond?
+
+[pause 6]
+
+It goes down. That is the see-saw. And question four, a word from episode three. What is a coupon?
+
+[pause 6]
+
+The yearly interest a bond pays. Well done. If you got three of four, you're doing great.
+
+[pause 1.2]
+
+Tomorrow, Tuesday, is episode seven: compounding. We'll see why interest on interest is the most powerful force in long term investing, and why starting early matters more than most people think. Have a good day. Educational, not financial advice. See you tomorrow.
