@@ -1,4 +1,4 @@
-# WRITER: the nightly run (Mon to Fri, about 03:25 Berlin)
+# WRITER: the nightly run (Mon to Fri, 02:37 Berlin)
 
 Ehsan, 27 Nov 2026: **fully automatic**. The writer pushes straight to `main` after the critic pass; GitHub Actions (`.github/workflows/publish.yml`) then builds the MP3s, stores them in Releases and updates the feed. Nobody approves in between, so the critic pass is the only gate. Mistakes are corrected in the next episode, never by re-rendering.
 
@@ -29,7 +29,7 @@ Slots from CURRICULUM.md: A and B new lessons; C new lesson Mon/Wed, review Tue/
 
 ## 5. Publish
 - Set `"publish": true` on each episode that passed. Update STATUS.md (table and Next episodes), GLOSSARY.md, INTERVIEW_BANK.md.
-- One commit to `main`: "Episodes NNN-NNN for <date>", push (retry on network errors). Aim to push by 04:30 Berlin so the audio is ready by 05:00.
+- One commit to `main`: "Episodes NNN-NNN for <date>", push (retry on network errors). Aim to push by 04:00 Berlin: building 3 MP3s in Actions can take up to an hour, and Ehsan wakes at 05:30.
 - If data or the clone fails: publish nothing, write the reason in STATUS.md if you can, and end with a short failure summary. Never guess.
 
 ## 6. Summary
