@@ -22,11 +22,16 @@ for meta_path in sorted((ROOT / "episodes").glob("*/meta.json")):
         continue
     n = meta["number"]
     mp3 = ROOT / "audio" / f"daily-brief-{n:03d}.mp3"
+    tag = f"ep-{n:03d}"
+    if not mp3.exists():
+        # an earlier run may have uploaded the MP3 but failed before saving meta.json: reuse it
+        mp3.parent.mkdir(exist_ok=True)
+        subprocess.run(["gh", "release", "download", tag, "-p", mp3.name, "-D", str(mp3.parent), "-R", REPO],
+                       capture_output=True)
     if not mp3.exists():
         run(sys.executable, str(ROOT / "build" / "build_episode.py"), str(meta_path.parent))
     secs = int(float(subprocess.check_output(
         ["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(mp3)])))
-    tag = f"ep-{n:03d}"
     # create the release, or add the file to it if a previous run already created it
     if subprocess.run(["gh", "release", "view", tag, "-R", REPO], capture_output=True).returncode == 0:
         run("gh", "release", "upload", tag, str(mp3), "--clobber", "-R", REPO)
