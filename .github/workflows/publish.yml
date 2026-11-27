@@ -7,7 +7,7 @@ name: Publish episodes
 on:
   push:
     branches: [main]
-    paths: ["episodes/**", "build/**", ".github/workflows/publish.yml"]
+    paths: ["episodes/**", "build/**", "assets/**", ".github/workflows/publish.yml"]
   workflow_dispatch: {}
 
 permissions:
@@ -33,7 +33,7 @@ jobs:
       - name: Install tools
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
-          pip install edge-tts==7.3.1
+          pip install edge-tts==7.3.1 pillow==11.3.0
       - name: Build and upload new episodes
         env:
           GH_TOKEN: ${{ github.token }}
@@ -45,7 +45,9 @@ jobs:
           git add episodes/*/meta.json
           git diff --cached --quiet || { git commit -m "Record published audio [skip ci]" && git push; }
       - name: Build feed and site
-        run: python build/make_feed.py _site
+        run: |
+          python build/make_feed.py _site
+          python build/make_art.py _site
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

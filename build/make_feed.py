@@ -45,8 +45,10 @@ for m, url, size, secs in eps:
       <enclosure url="{url}" length="{size}" type="audio/mpeg"/>
       <itunes:duration>{secs}</itunes:duration>
       <itunes:episode>{m['number']}</itunes:episode>
+      <itunes:image href="{BASE}/art/{m['number']:03d}.png"/>
     </item>""")
-    rows.append(f'<li><a href="{url}">{escape(title)}</a> ({secs//60} min)</li>')
+    rows.append(f'<a class="ep" href="{url}"><img src="art/{m["number"]:03d}.png" alt="" loading="lazy">'
+                f'<span><b>{escape(title)}</b><small>{escape(m["date"])} · {secs // 60} min</small>{escape(m["description"])}</span></a>')
 
 feed = f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
@@ -54,6 +56,8 @@ feed = f"""<?xml version="1.0" encoding="UTF-8"?>
     <title>Daily Brief</title>
     <link>{BASE}/</link>
     <language>en</language>
+    <image><url>{BASE}/cover.png</url><title>Daily Brief</title><link>{BASE}/</link></image>
+    <itunes:image href="{BASE}/cover.png"/>
     <description>A daily coaching podcast: markets news in plain English, one lesson on the way to a career in asset management, a quiz, and a Myth vs Math check-in. Educational, not financial advice.</description>
     <itunes:author>Daily Brief</itunes:author>
     <itunes:explicit>false</itunes:explicit>
@@ -65,7 +69,15 @@ feed = f"""<?xml version="1.0" encoding="UTF-8"?>
 OUT.mkdir(parents=True, exist_ok=True)
 (OUT / "feed.xml").write_text(feed)
 (OUT / "index.html").write_text(
-    '<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
-    f'<title>Daily Brief</title><h1>Daily Brief</h1><p>Podcast feed: <a href="feed.xml">{BASE}/feed.xml</a></p><ul>{"".join(rows)}</ul>'
-    "<p>Educational, not financial advice.</p>")
+    '<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
+    '<title>Daily Brief</title><link rel="icon" href="cover.png"><link rel="apple-touch-icon" href="cover.png">'
+    '<style>body{margin:0;background:#0b1b2b;color:#f5f7fa;font:16px/1.45 system-ui,sans-serif}'
+    'main{max-width:720px;margin:auto;padding:16px}header{display:flex;gap:16px;align-items:center;overflow-wrap:anywhere}'
+    'header img{width:120px;border-radius:12px}h1{margin:0;color:#f2b84b}a{color:#f2b84b}'
+    '.ep{display:flex;gap:12px;padding:12px 0;border-top:1px solid #1e3c58;color:inherit;text-decoration:none}'
+    '.ep img{width:88px;height:88px;border-radius:8px;flex:none}.ep b,.ep small{display:block}'
+    '.ep small{color:#96afc6}footer{color:#96afc6;padding:24px 0}</style><main>'
+    f'<header><img src="cover.png" alt="Daily Brief cover"><div><h1>Daily Brief</h1>'
+    f'<p>Markets, lessons and interviews: from beginner to asset manager.<br><a href="feed.xml">Podcast feed (paste into AntennaPod)</a></p></div></header>'
+    f'{"".join(rows)}<footer>Educational, not financial advice.</footer></main>')
 print(f"feed.xml: {len(eps)} episodes in {OUT}")
