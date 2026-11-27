@@ -20,8 +20,11 @@ MP3s live in GitHub Releases (tag `ep-NNN`), not in the repo, so the repo stays 
 5. AntennaPod > the Daily Brief podcast > settings (gear): **Auto download: on**.
    App Settings > Downloads: **Update interval: every hour**, and allow mobile data if you want it off Wi-Fi.
 
-## Still to decide
-- Whether the writer pushes straight to `main` or to a branch you merge with one tap (proposed: branch for 2 weeks, then `main`).
+## Decided (27 Nov 2026)
+- Fully automatic: the writer pushes straight to `main` after the critic pass (rules in WRITER.md). First run Mon 30 Nov.
+- Feed live, subscribed in AntennaPod. Note: the repo's default branch is still `ccr-ce5adaa0-x8xpe2`; the `github-pages` environment has a rule allowing `main`.
+
+## Next
 - Phase 2: your own app (home-screen web app with player, show notes, quiz, glossary).
 
 Educational, not financial advice.
