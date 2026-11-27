@@ -1,0 +1,69 @@
+Welcome back to your Daily Brief. This is episode seven, Saturday, the twenty-eighth of November. If you just heard episode six, the markets are done for today, so we go straight to the lesson. Thirty-second recap. Interest is the price of money over time. Compounding means you earn interest on past interest, so one thousand dollars at five percent becomes about one thousand six hundred and twenty-nine after ten years. And the safe government rate is the yardstick every other investment has to beat. Today we turn compounding around. Present value, future value, and discounting. Then an interview question and a quiz. Let's go.
+
+[pause 1.2]
+
+Part one. Today's lesson. Present value, future value, and discounting.
+
+Start with a simple question. Would you rather have one thousand dollars today, or one thousand dollars in ten years? Today, of course. You could put today's money in a savings account and earn interest. You could spend it now. And you know you have it, while a promise ten years away might not be kept. That is the time value of money: a dollar today is worth more than a dollar tomorrow.
+
+Future value takes money forward in time. You already know the formula from episode six. The future value equals today's amount times one plus the rate, raised to the number of years.
+
+Present value takes money back. You divide instead of multiply. The present value equals the future amount divided by one plus the rate, raised to the number of years. This is called discounting, and the rate you use is called the discount rate.
+
+Here is the classic example. What is one dollar, received in ten years, worth today? At a discount rate of five percent, divide one by one point zero five, ten times over. You get about sixty-one cents. So a promise of one dollar in ten years is worth about sixty-one cents today, if you could earn five percent elsewhere. Check it the other way: sixty-one cents, growing at five percent for ten years, becomes about one dollar. Present value and future value are the same idea, read in two directions.
+
+The number you multiply by, here about zero point six one, has a name. It is the discount factor. Every future amount gets its own discount factor, and the further away it is, the smaller the factor.
+
+Now the most important question. Which rate do you use? The discount rate is your opportunity cost: the return you give up by not putting the money somewhere else with the same risk. Think of it as three layers. First, a real rate, the reward for waiting. Second, expected inflation, because money will buy less later. Together those two are roughly the safe government rate. Third, a risk premium, extra return for the chance you will not be paid in full. A promise from the American government gets a low discount rate. A promise from a young company gets a much higher one. Same dollar, different risk, different present value.
+
+Two rules follow, and they are worth saying out loud. One: the higher the discount rate, the lower the present value. Two: the further away the money, the more the rate matters. One thousand dollars in thirty years is worth about two hundred and thirty-one dollars today at five percent, but only about one hundred and thirty-one at seven percent. Two points of rate, and the value drops by more than forty percent.
+
+Now connect this to the bond see-saw from episode three. A bond is just a set of promised payments. Its price is the present value of those payments. So when rates rise, the present values fall, and so does the price. Let's use the real numbers from episode six. Imagine a simple bond that pays one thousand dollars in exactly ten years and nothing before, called a zero-coupon bond. For simplicity, use the ten year American government rate as the discount rate, compounded once a year. On Friday, the thirteenth of November, that rate was five point one five percent, and the bond would be worth about six hundred and five dollars. On Wednesday, the twenty-fifth, the rate was four point eight five percent, and the same bond would be worth about six hundred and twenty-three dollars. The rate fell by about thirty basis points, and the price rose by about three percent. That is the see-saw, now with the math behind it. Real bonds pay coupons and are quoted a bit differently, and you will learn the exact method in the bond weeks. The direction is always the same.
+
+Here is a real-life choice. You win a prize. You can take one million euros today, or one and a half million in ten years. Which is better? It depends on the discount rate. At five percent, one and a half million in ten years is worth about nine hundred and twenty-one thousand euros today. So the million today is worth more. At four percent, it is worth about one million and thirteen thousand. Now the later payment wins. Same choice, different rate, different answer. Real lotteries in America offer exactly this kind of choice: a lump sum today, or yearly payments over many years.
+
+With more than one payment, you discount each one separately and add them up. Say a project costs one thousand dollars today and pays four hundred dollars at the end of each of the next three years. At a discount rate of eight percent, the three payments are worth about one thousand and thirty-one dollars today. Take away the one thousand you pay, and the project adds about thirty-one dollars of value. That number, value in minus value out, all in today's money, is called the net present value. If it is positive, the project earns more than your required rate. At twelve percent, the same project is worth about minus thirty-nine dollars, and you should pass. You will use net present value again in corporate finance.
+
+You can also run the formula backwards to find a rate. If one thousand dollars grows to two thousand in ten years, what rate did it earn? Take the tenth root of two, and subtract one: about seven point one eight percent a year. Remember the rule of seventy-two from episode six? Seventy-two divided by ten gives seven point two. Very close.
+
+And one more link to episode six. With continuous compounding, the present value uses the number e. One thousand dollars in ten years at five percent continuous is worth about six hundred and seven dollars today, a little less than the six hundred and fourteen with yearly compounding. You will meet this version in option pricing.
+
+Now the fair counter-view. Present value is only as good as the discount rate you choose, and choosing it is a judgment. Small changes in the rate can swing a value a lot, especially for money far in the future. The best-known example is the debate on climate change. In 2006, the economist Nicholas Stern used a low discount rate, around one point four percent, in a report for the British government, and found that acting early on climate is worth it. The economist William Nordhaus argued that the rate should be clearly higher. Look at what that one input does. One hundred dollars of damage in one hundred years is worth about twenty-five dollars today at one point four percent, but only about one dollar and twenty cents at four and a half percent, a rate I chose just to show the effect. Same damage, very different answer. Professionals do not hide this. They show the value at several discount rates, so the reader sees how much depends on that one number.
+
+What does a professional check every time? Four things. Which cash flows, and exactly when? Which discount rate, and does it match the risk of those cash flows? Is the rate per year, and does the compounding match the timing? And how much does the answer change if the rate moves by one point?
+
+To sum up. Future value carries money forward with compounding. Present value brings it back with discounting. The discount rate is your opportunity cost, safe rate plus a risk premium. Higher rate, lower value, and the effect grows with time. And the value of a bond, a stock or a project is the present value of the cash it is expected to pay.
+
+[pause 1.2]
+
+Part two. Interview corner. Here is a real interview question, and you can expect it early in any finance interview. What is one dollar received in ten years worth today? Think about a thirty-second answer. Say it out loud now.
+
+[pause 30]
+
+Here is a model answer, and yours can be different. It depends on the discount rate, which is the return I could earn elsewhere at the same risk. I discount the dollar back: one divided by one plus the rate, raised to the power of ten. At five percent, that is about sixty-one cents. If the payment is risky, I use a higher rate, so it is worth less. And the further away the money, the more the rate matters. That is also why bond prices fall when rates rise. Notice the pattern: say "it depends", say on what, then give a number.
+
+[pause 1.2]
+
+Part three. Quiz. Four questions. Say each answer out loud in the pause.
+
+Question one. What is one thousand dollars, received in two years, worth today at a discount rate of five percent? A rough answer is fine.
+
+[pause 6]
+
+About nine hundred and seven dollars. Question two. The discount rate goes up. Does the present value go up or down?
+
+[pause 6]
+
+Down. Higher rate, lower present value. Question three. A project costs one thousand dollars today, and the present value of its future cash is one thousand and fifty. What is the net present value, and is it a good project?
+
+[pause 6]
+
+Fifty dollars, positive, so it earns more than the required rate. And question four, a word from episode three. What is the face value of a bond?
+
+[pause 6]
+
+The amount the bond pays back at the end. Well done.
+
+[pause 1.2]
+
+Next, right after this, in episode eight: annuities and perpetuities. What happens when the same payment comes every month, like a mortgage, or forever, like the old British government bonds called consols, which paid interest with no end date until they were repaid in 2015. See you in the next one. Educational, not financial advice.

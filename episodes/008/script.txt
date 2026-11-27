@@ -1,0 +1,73 @@
+Welcome back to your Daily Brief. This is episode eight, Saturday, the twenty-eighth of November, the last of today's three. The markets were in episode six, so straight to the lesson. Thirty-second recap of episode seven. Present value brings future money back to today: divide by one plus the rate, raised to the number of years. The discount rate is your opportunity cost, the safe rate plus a premium for risk. Higher rate, lower value. And one dollar in ten years is worth about sixty-one cents today at five percent. Today: what happens when the same payment comes again and again. Annuities and perpetuities. Then an interview question and a quiz. Let's go.
+
+[pause 1.2]
+
+Part one. Today's lesson. Annuities and perpetuities.
+
+An annuity is a series of equal payments, at equal intervals, for a fixed number of periods. Your rent is one. A car loan is one. A mortgage is one. A bond's coupons are one. And a pension that pays you the same amount every month in retirement is one. In fact, insurers sell a product simply called an annuity: you hand over a lump sum and they pay you a fixed income.
+
+A perpetuity is an annuity that never ends. The same payment, forever.
+
+Let's start with the perpetuity, because its formula is the simplest in all of finance. The present value of a perpetuity equals the payment divided by the rate. Fifty dollars a year forever, at a discount rate of five percent, is worth fifty divided by zero point zero five: one thousand dollars. Why does that work? Put one thousand dollars in an account at five percent, and it pays fifty dollars a year forever, without ever touching the one thousand. So the two must have the same value.
+
+Do perpetuities exist? Almost. For about two hundred and sixty years, the British government had bonds called consols, first issued in the seventeen-fifties, with no date to pay back the loan. They just paid interest. In 2015 the government repaid the last of them. Today, the closest examples are certain preferred shares, which pay a fixed dividend with no end date. And the idea is everywhere in valuation, as you'll see in a moment.
+
+Now a perpetuity that grows. If the payment grows every year at a steady rate, the present value equals next year's payment divided by the discount rate minus the growth rate. Say a company will pay a dividend of four dollars next year, it grows three percent a year forever, and investors want eight percent. Four divided by zero point zero five gives eighty dollars a share. This is called the Gordon growth model, after the economist Myron Gordon, and it is one of the first stock valuation tools you will learn properly in the equity weeks.
+
+Here is the trap, and interviewers love it. Watch the gap between the rate and the growth. If the growth estimate rises from three percent to seven percent, the gap shrinks from five points to one, and the value jumps from eighty dollars to four hundred. A small change in a guess about forever gives a huge change in value. And if growth is equal to or above the discount rate, the formula breaks completely. No company can grow faster than the whole economy forever. So a professional keeps long-run growth modest and always checks how sensitive the answer is.
+
+Now back to annuities, with a fixed end. The present value of an ordinary annuity, where each payment comes at the end of the period, equals the payment, times one minus one over one plus the rate to the number of periods, all divided by the rate. Don't memorize the words. The idea is simple: it is a perpetuity that pays from the end of the first period, minus a perpetuity that pays from the period after the last payment. Your calculator or spreadsheet does the rest. In a spreadsheet, the functions are called P V for present value and P M T for payment.
+
+An example. Ten thousand dollars a year for ten years, first payment in one year, at five percent, is worth about seventy-seven thousand two hundred dollars today. Less than the one hundred thousand you will collect, because the later payments are discounted more.
+
+There is a second type, the annuity due, where each payment comes at the start of the period, like rent paid at the beginning of each month. Every payment arrives one period earlier, so it is worth a bit more. You multiply the ordinary value by one plus the rate. The same ten payments, starting today, are worth about eighty-one thousand one hundred dollars. On exams, the first thing to ask is: start or end of the period?
+
+Now the big real-life example. A mortgage. Say you borrow three hundred thousand euros for twenty-five years at four percent a year, paid monthly. This rate is chosen for the example, not today's market rate. Because payments are monthly, use a monthly rate, four percent divided by twelve, and three hundred monthly payments. Solve the annuity formula for the payment, and you get about one thousand five hundred and eighty-four euros a month.
+
+Over twenty-five years you pay about four hundred and seventy-five thousand euros in total. So about one hundred and seventy-five thousand of that is interest.
+
+Now look inside the first payment. Interest for the first month is three hundred thousand times four percent divided by twelve: exactly one thousand euros. So of your first payment of one thousand five hundred and eighty-four, only about five hundred and eighty-four pays down the loan. The rest is interest. Each month the loan gets a little smaller, so the interest part shrinks and the repayment part grows. After ten years, you still owe about two hundred and fourteen thousand euros. That is why the early years of a mortgage feel so slow. This schedule of payments is called an amortization schedule, and to amortize means to pay off a loan step by step.
+
+And the rate matters a lot. The same loan at six percent costs about one thousand nine hundred and thirty-three euros a month, and the total interest grows to about two hundred and eighty thousand. Two points of rate, about sixty percent more interest. That is why a move in rates, like the ones you hear about in the markets segment, changes what families can afford, and what banks and bond investors earn.
+
+Turn it around, and the same math is saving for retirement. Save five hundred euros a month for thirty years at five percent a year, compounded monthly. You pay in one hundred and eighty thousand euros. At the end you have about four hundred and sixteen thousand. More than half of the final amount is compounding. That is the future value of an annuity, and it is also why starting early matters so much. The five percent here is an example, not a promise. Real returns go up and down.
+
+Why does an asset manager care? Because so much of the job is annuities. A pension fund owes its members a stream of payments for decades, and it must value that stream today to know if it has enough money. A bond fund holds coupons, which are annuities. An insurer prices the annuities it sells. And when an analyst values a company, the last step is often a growing perpetuity for all the years after the forecast. That step, called the terminal value, is often more than half of the total value, so the trap you just heard about matters in real money.
+
+What does a professional check? Four things. Are payments at the start or the end of each period? Does the rate match the payment frequency, monthly with monthly? Is the stream fixed or growing? And for anything that lasts forever, is the growth rate believable, and well below the discount rate?
+
+To sum up. An annuity is equal payments for a fixed time. A perpetuity is equal payments forever, worth the payment divided by the rate. A growing perpetuity divides by the rate minus growth, and is very sensitive to that gap. And a mortgage is an annuity: early payments are mostly interest.
+
+[pause 1.2]
+
+Part two. Interview corner. Here is a real interview question. How do you value a stream of cash flows that never ends, and what can go wrong? Think about a thirty-second answer. Say it out loud now.
+
+[pause 30]
+
+Here is a model answer, and yours can be different. A constant stream that never ends is a perpetuity, worth the payment divided by the discount rate. Fifty a year at five percent is worth one thousand. If it grows at a steady rate, I divide next year's payment by the discount rate minus the growth rate. That is the Gordon growth model. What can go wrong is the gap between the two. If growth gets close to the discount rate, the value explodes, so I keep long-run growth modest, below the growth of the economy, and I show the value for a few different growth rates. Notice the pattern: the formula, an example, then the risk.
+
+[pause 1.2]
+
+Part three. Quiz. Four questions. Say each answer out loud in the pause.
+
+Question one. A share pays a fixed dividend of one hundred euros a year forever. Investors want four percent. What is it worth?
+
+[pause 6]
+
+Two thousand five hundred euros. One hundred divided by zero point zero four. Question two. Ten payments at the start of each year, or the same ten payments at the end of each year. Which is worth more today?
+
+[pause 6]
+
+At the start of each year, the annuity due, because every payment comes sooner. Question three. You borrow two hundred thousand euros at six percent a year, paid monthly. How much interest is in the first month?
+
+[pause 6]
+
+One thousand euros. Two hundred thousand times six percent, divided by twelve. And question four, a word from episode six. Five percent paid monthly is worth about five point one two percent a year. What do we call that yearly rate?
+
+[pause 6]
+
+The effective annual rate. Well done.
+
+[pause 1.2]
+
+Next, in episode nine: returns. How to measure what an investment really earned, and why two fair-looking methods can give a fund manager two very different numbers. See you in the next one. Educational, not financial advice.

@@ -34,3 +34,20 @@
 | 6 | Compound interest | Interest earned on the interest too (more in ep 7) |
 | 6 | Basis point | One hundredth of a percentage point (30 bp = 0.3 points) |
 | 6 | Safe rate (yardstick) | The government rate every other investment must beat to be worth its risk |
+| 6 | Effective annual rate | The true yearly rate once compounding is counted (5% paid monthly = about 5.12%) |
+| 6 | Real return | Return after inflation (roughly nominal minus inflation) |
+| 7 | Time value of money | A dollar today is worth more than a dollar later |
+| 7 | Future value / present value | Money carried forward with compounding / brought back to today with discounting |
+| 7 | Discount rate | The return you give up elsewhere at the same risk (safe rate plus a risk premium) |
+| 7 | Discount factor | The number you multiply a future amount by to get today's value (about 0.61 for 10 years at 5%) |
+| 7 | Opportunity cost | What you give up by choosing one use of money over the next best one |
+| 7 | Risk premium | Extra return demanded for the chance of not being paid in full |
+| 7 | Zero-coupon bond | A bond that pays only one amount at the end, nothing before |
+| 7 | Net present value (NPV) | Present value of what comes in minus what goes out; positive = earns more than the required rate |
+| 8 | Annuity | Equal payments at equal intervals for a fixed number of periods (mortgage, car loan, coupons) |
+| 8 | Ordinary annuity / annuity due | Payments at the end / at the start of each period; the annuity due is worth more |
+| 8 | Perpetuity | Equal payments forever; worth payment divided by the rate |
+| 8 | Growing perpetuity (Gordon growth model) | Next payment divided by (discount rate minus growth); explodes if growth nears the rate |
+| 8 | Amortization (schedule) | Paying off a loan step by step; early payments are mostly interest |
+| 8 | Terminal value | Value of all years after a forecast, often a growing perpetuity |
+| 8 | Preferred share | A share that pays a fixed dividend, sometimes with no end date |

@@ -1,5 +1,5 @@
-# Episode 6: sources and checks (made Fri 27 Nov 2026 for Mon 30 Nov)
-Data: market-news-lab/data/prices.csv, origin/main fetched 27 Nov (no changes after fetch). Data ends: US stocks/US10Y/EEM/NDX at Wed 25 Nov (Thu 26 US holiday; Fri 27 not in data); Europe, gold, Brent, DXY at Thu 26; BTC, ETH, EURUSD, USDJPY at Fri 27. Nothing after is guessed. Mon 30 Nov data did not exist when made.
+# Episode 6: sources and checks (made Fri 27 Nov 2026; moved to Sat 28 Nov, slot A)
+Data: market-news-lab/data/prices.csv, main re-fetched Fri 27 Nov 22:11 UTC (latest commit 298b2d7 'Update prices for 2026-11-27'); every number below re-checked against it, none changed. Data ends: US stocks/US10Y/EEM/NDX at Wed 25 Nov (Thu 26 US holiday; Fri 27 not in data); Europe, gold, Brent, DXY at Thu 26; BTC, ETH, EURUSD, USDJPY at Fri 27. Nothing after is guessed. Episode date Sat 28 Nov: markets closed; Sat 28 crypto prices not in data and not used. Script says which close is used per market.
 - SPX Wed 25: 7,182.78, -0.25% ("about seven thousand one hundred eighty-three").
 - US10Y Wed 25: 4.848 (spoken 4.85); Fri 13 Nov: 5.154. Fall = 5.154-4.848 = 0.306 pts = ~30 bp ("three tenths of a point").
 - Thu 26: DAX 25,215.52 +2.08%; SX5E 6,014.74 +2.04% ("about two percent"); GOLD 3,658.10 +3.46%; BRENT 92.24 -2.51%.
@@ -13,3 +13,4 @@ Lesson rewritten 27 Nov (faster pace, curriculum v4 W2 #1: interest, compounding
 - Real return: 1.05/1.03-1 = 1.942% ("about 1.94"); quiz 1.06/1.04-1 = 1.923% ("1.92").
 - Fed sets a short-term policy rate (standard fact, no current level quoted). Fee-as-compounding link: ep 4 example. Credit spread named, taught later (W18).
 Terms repeated in quiz: coupon (ep 3).
+- Critic round 1 (27 Nov): 5 FIX applied with the critic's exact text (inflation in what interest pays for; EAR disclosure wording; loan example compounding stated; pension funds 'many'; ending order). Gold revision: ep 5 notes recorded 3,605.20 from the data at the time (see ep 6 note above).
