@@ -6,5 +6,10 @@ Data: market-news-lab/data/prices.csv, origin/main fetched 27 Nov (no changes af
 - Fri 27: BTC 61,409.80 +0.87%; EURUSD 1.0979 ("about 1.1").
 - CORRECTION: ep 5 said gold Wed 25 = 3,605.20. Data now: 3,535.80 (-0.73%). Revised after ep 5 was made; ep 5 not re-rendered (per rules), corrected in ep 6 audio.
 - No published source for the rate fall: audio says price data tells what, not why. "Rates down -> existing bond prices up" is the see-saw rule, not a measured bond price.
-Lesson (standard concepts, no source needed): $1,000 at 5% simple = $50/yr, $150 in 3 yrs; compound = 1000*1.05^3 = 1,157.63 -> interest $157.63 ("about 158"). Second year interest = 5% of 1,050. Fed sets a short-term rate (standard fact, no current level quoted). Bank spread, fee-as-cost link (ep 4 example), see-saw (ep 3).
-Term repeated in quiz: coupon (ep 3), see-saw (ep 3).
+Lesson rewritten 27 Nov (faster pace, curriculum v4 W2 #1: interest, compounding, real returns). Standard concepts (CFA L1 Quant "Time value of money"; Bodie-Kane-Marcus ch. 5), recomputed with Python:
+- $1,000 at 5% simple: $50/yr, $150 in 3 yrs. Compound: 1000*1.05^2 = 1,102.50; ^3 = 1,157.63 ("about 1,158"); ^10 = 1,628.89 ("about 1,629"); ^30 = 4,321.94 ("about 4,320"). Simple 30 yrs: 1,000 + 30*50 = 2,500.
+- Rule of 72: 72/6 = 12, 72/9 = 8, 72/8 = 9 (approximation; exact doubling at 8% = ln2/ln1.08 = 9.006 yrs).
+- Effective annual rate: 5% monthly = (1+0.05/12)^12-1 = 5.116% ("about 5.12"); 4.9% monthly = 5.012% ("about 5.01"); continuous 5% = e^0.05-1 = 5.127% ("about 5.13").
+- Real return: 1.05/1.03-1 = 1.942% ("about 1.94"); quiz 1.06/1.04-1 = 1.923% ("1.92").
+- Fed sets a short-term policy rate (standard fact, no current level quoted). Fee-as-compounding link: ep 4 example. Credit spread named, taught later (W18).
+Terms repeated in quiz: coupon (ep 3).

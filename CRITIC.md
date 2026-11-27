@@ -3,13 +3,13 @@
 Ehsan, 27 Nov 2026: two forces work on everything. Force 1, the writer, finds the best material and makes sure it is correct. Force 2, the critic, tries to disprove it before anything is published, then the writer fixes every issue.
 
 ## Force 1: the writer
-- Builds each lesson from authoritative material: CFA Program curriculum outlines, GARP FRM readings, standard textbooks (Hull, Fabozzi, Bodie-Kane-Marcus, Damodaran), central banks, regulators, BIS, IMF, peer-reviewed papers.
+- Builds each lesson from the vetted list in `SOURCES.md` (tier 1 official and syllabus, tier 2 textbooks and courses, tier 3 podcasts for ideas and examples only, tier 4 Ehsan's fund-manager repo, which must always be consulted). Podcasts are never copied and never the only source for a fact.
 - Every number and claim goes into `notes.md` with its source. Market numbers come from News Lab `prices.csv`, re-fetched first.
 - Every lesson has a plain definition, a real-life example, real data where it exists (dated and sourced), and quiz and interview questions.
 
 ## Force 2: the critic (a fresh agent that did not write the script)
 It gets only `script.txt`, `notes.md` and the data. Its job is to try to prove the episode wrong.
-1. **Facts and definitions.** Check every definition against at least one authoritative source, and against two for anything disputed. Flag simplifications that become wrong ("a bond is risk-free").
+1. **Facts and definitions.** Check every definition against at least one tier 1 or tier 2 source from `SOURCES.md`; reject any fact backed only by a podcast or tier 3 source, and against two for anything disputed. Flag simplifications that become wrong ("a bond is risk-free").
 2. **Numbers.** Recompute every number from the raw data with its own script. Spoken number must equal the data (rounding included). Dates must say "as of".
 3. **Causes.** Any "why the market moved" without a published source is a FAIL.
 4. **Strongest counter-view.** Name the best-known scholar or practitioner view that disagrees and check if the script is fair to it.

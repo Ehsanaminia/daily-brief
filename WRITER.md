@@ -2,11 +2,11 @@
 
 Ehsan, 27 Nov 2026: **fully automatic**. The writer pushes straight to `main` after the critic pass; GitHub Actions (`.github/workflows/publish.yml`) then builds the MP3s, stores them in Releases and updates the feed. Nobody approves in between, so the critic pass is the only gate. Mistakes are corrected in the next episode, never by re-rendering.
 
-Read first: PROJECT.md, CURRICULUM.md (format and order), CRITIC.md, STATUS.md, GLOSSARY.md, INTERVIEW_BANK.md, PRETRADE_CHECKLIST.md.
+Read first: PROJECT.md, CURRICULUM.md (format and order), SOURCES.md, CRITIC.md, STATUS.md, GLOSSARY.md, INTERVIEW_BANK.md, PRETRADE_CHECKLIST.md.
 
 ## 1. Set up
 - Today = the date in Europe/Berlin. Weekends: do nothing.
-- `git clone` (or pull) `Ehsanaminia/daily-brief` and `Ehsanaminia/market-news-lab`, both `main`. Work on `main` of daily-brief.
+- `git clone` (or pull) `Ehsanaminia/daily-brief`, `Ehsanaminia/market-news-lab` and `Ehsanaminia/fund-manager`, all `main`. For every lesson, read the matching lesson in `fund-manager/docs/curriculum.md` (and `docs/plan.md`) and use its examples and interview question where they fit (Ehsan, 27 Nov: required supporting source, never the only one). Work on `main` of daily-brief.
 - Re-fetch `market-news-lab/data/prices.csv` now; rows can be revised. Note the newest close per market. Never guess a missing day; say which close you use.
 - Check the last "Publish episodes" run and Releases: if yesterday's episodes did not get an `audio_url`, say so in STATUS.md (Open items) and in the run summary.
 
@@ -17,6 +17,7 @@ Slots from CURRICULUM.md: A and B new lessons; C new lesson Mon/Wed, review Tue/
 - If a folder for today already exists **without** `"publish": true` (for example 006 on Mon 30 Nov), it is today's slot A: keep its content, refresh every market number from today's data, and send it through the critic like a new episode. Never touch an episode that already has `"publish": true`.
 
 ## 3. Write each episode
+- Pace (Ehsan, 27 Nov): he has a Master of Finance; basics move fast, plain English stays. Teach at the depth of the CFA/FRM topic, with one real example and real data where possible.
 - `script.txt` (blank line between paragraphs, `[pause N]` for silence), `notes.md` (every number and claim with its source), `meta.json`:
   `{"number": N, "title": "...", "date": "YYYY-MM-DD", "slot": "A", "description": "...", "publish": false}`
 - 1,700 to 1,900 spoken words (about 10 minutes at +12%). Follow the episode order in PROJECT.md. Only one slot per day carries the markets news (A); B and C open with a one-line link to A instead.

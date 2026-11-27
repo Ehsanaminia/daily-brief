@@ -16,7 +16,7 @@
 - Own project (own repo) for the podcast, and one thread (session) per episode.
 
 ## Next episodes
-- Mon 30 Nov: A = 006 Interest (draft), B = 007 Compounding, C = 008 Inflation and real returns (curriculum v4, W2). Then continue in CURRICULUM.md order, 3 episodes per weekday.
+- Mon 30 Nov: A = 006 Interest, compounding and real returns (script tightened 27 Nov to the faster pace; numbers still to refresh), B = 007 Present value, future value, discounting, C = 008 Annuities and perpetuities (curriculum v4, W2 fast refresher). Then continue in CURRICULUM.md order, 3 episodes per weekday.
 
 ## Open items
 - **Data revisions (26 Nov):** the 20 Nov rows for Brent and gold changed in prices.csv after eps 1 and 3 were made. Both re-rendered with the corrected numbers. Check the data again before each episode (rows can be revised).

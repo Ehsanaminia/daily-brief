@@ -19,11 +19,11 @@ Tags: [L1] [L2] [L3] CFA level, [PM] [PMk] Level III pathways, [F1] [F2] FRM Par
 Asset manager, stock, bond, funds and ETFs, review.
 
 ## Phase 1. Foundations (weeks 2 to 13)
-**W2 Money and time** [L1]: 1 Interest. 2 Compounding. 3 Inflation and real returns. 4 Present and future value. 5 Discount rates. 6 Annuities and perpetuities (mortgage example). 7 Return types: holding period, annualized, arithmetic vs geometric. 8 Benchmarks: what to compare a return with; money- vs time-weighted return.
+**W2 Money and time, fast refresher** [L1] (Ehsan, 27 Nov: he has a Master of Finance, so basics move fast; one block instead of two): 1 Interest, compounding and real returns. 2 Present value, future value, discounting. 3 Annuities and perpetuities (mortgage example). 4 Return types and money- vs time-weighted return. 5 Benchmarks. 6 Mean, standard deviation, volatility. 7 Distributions: normal, lognormal, binomial, fat tails. 8 Correlation, covariance, beta.
 
-**W3 Statistics I** [L1, F1]: 1 Average, median, spread. 2 Standard deviation: volatility, first look. 3 Distributions: binomial, normal, lognormal. 4 Fat tails, skew, kurtosis. 5 Probability and expected value. 6 Covariance and correlation. 7 Samples, standard error, central limit theorem, confidence intervals. 8 Hypothesis tests and p-values.
+**W3 Statistics that investors use** [L1, L2, F1]: 1 Samples, CLT, confidence intervals. 2 Hypothesis tests and p-values. 3 Regression in practice: what a beta estimate hides. 4 Correlation is not causation. 5 Monte Carlo and bootstrapping. 6 Why most backtests lie (overfitting, survivorship, look-ahead). 7 Percent vs percentage points vs basis points; reading charts honestly. 8 Review on one page.
 
-**W4 Statistics II** [L1, L2, F1]: 1 Simple regression and beta. 2 Correlation is not causation. 3 Percent vs percentage points vs basis points. 4 Reading a chart and a table honestly. 5 Monte Carlo simulation. 6 Bootstrapping. 7 Why most backtests lie (overfitting, survivorship, look-ahead). 8 Review lesson: statistics on one page.
+(W4 merged into W2 and W3 on 27 Nov: the following blocks keep their numbers.)
 
 **W5 Risk and return** [L1, F1]: 1 Risk premium. 2 Diversification math. 3 Efficient frontier. 4 CAPM and beta. 5 Sharpe, Treynor, Sortino, M-squared. 6 Factor models and APT. 7 Market efficiency: EMH and anomalies. 8 VaR and expected shortfall: first look.
 
@@ -117,6 +117,14 @@ Economics of asset management (AUM, fees, margins, passive shift), distribution 
 
 ## Phase 8. Career and exams (weeks 59 to 60)
 CFA and FRM paths and how this course maps to them, roles and firm types, stock and macro pitches, technical and behavioral questions, CV and LinkedIn, full mock interviews, a 12-month plan.
+
+## Alignment with Ehsan's Fund Manager plan (repo Ehsanaminia/fund-manager, docs from 18 Oct 2026)
+The Fund Manager repo holds Ehsan's own 120-lesson, 24-week plan (CFA Level I tagged, with an interview question per day) for a learning game. It is a required supporting source (Ehsan, 27 Nov: must be used, not the main source): the writer always reads `docs/curriculum.md` and `docs/plan.md` for the matching lesson, reuses its interview questions (into INTERVIEW_BANK.md) and its "in the game" exercises as real-life examples. Most of its 120 lessons are already in the blocks above. These were missing and are added:
+- **Equities (W24 to W25):** sum of the parts; a "football field" of valuations; building a coverage list; catalysts and exit conditions; the one-page investment thesis; the two-minute stock pitch.
+- **Global equities (W23):** Japan (governance reform, NISA); China, India and emerging Asia; currency in equity returns.
+- **Investment data (new block after W54):** holdings, positions and transactions data; how official fund returns are calculated; risk and portfolio platforms such as Aladdin; data quality in an investment firm.
+- **AI in asset management (W56):** reading filings with AI and checking it; a bond pricer and a backtest in Python and SQL with AI as coding partner; why ML signals fail; the AI operating model of a firm; AI governance and model risk.
+- **Careers (W59 to W60):** the experienced-hire career-change story; networking plan; consulting case interviews for the Big 4; a house view on markets; the mock superday.
 
 ## Size and honesty
 - About 430 new lessons (some later blocks are listed by theme and get their full lessons when planned). At 10 a week that is about 43 weeks; with 4 to 6 buffer weeks (holidays, big market days) it ends around November 2027.
