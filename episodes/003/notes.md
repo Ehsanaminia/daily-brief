@@ -1,0 +1,8 @@
+# Episode 3: sources and checks (made Tue 24 Nov 2026 for Wed 25 Nov)
+Market numbers (market-news-lab/data/prices.csv, origin/main at 24 Nov; last close Fri 20 Nov; Mon/Tue missing, said in audio):
+- EURUSD 1.096972 (-0.02%) -> "about 1.1 dollars", "two hundredths of one percent". USDJPY 159.707 (+0.20%) -> "about 160 yen", "a little higher".
+- US10Y 5.052 (Thu 19 Nov) -> 4.912 (Fri 20 Nov). GOLD 3,515.4 (-4.62%). BRENT 92.57 (+0.64%). (Corrected 26 Nov: the first version used earlier values, GOLD 3,539.0 and BRENT 89.87, before the data was revised.) SX5E -2.81%. SPX about -3.7% (ep 2).
+Bond maths (annual coupon, $1,000 face, $50 coupon; python check): 5-year at 6% = $958, 30-year at 6% = $862. 10-year 5% coupon at 5.052% -> 4.912% yield: price +1.09% ("roughly one percent", rough estimate, said so).
+Lesson facts: standard definitions (face value, coupon, maturity, issuer, credit risk, price/yield inverse). "Higher rate = price of higher risk" is a textbook rule of thumb.
+Claim to double-check later: "when stocks fall, government bonds may cushion" (typical, not guaranteed; stated as 'may').
+Myth vs Math: mythvsmath ideas/PERFORMANCE-2026-11-22.md: subscribers 4, total views 1,560, 19 videos; "Does the S&P 500 Beat a World Portfolio?" published 18 Nov, 483 views, 113.8/day; "Can Government Bonds Lose Money?" 3 views. Buffer error: INSUFFICIENT_SCOPE, requires insights:read. Draft "you need a lot of money to start investing (waiting for approval)": from commit message cf42b30 on mythvsmath main, not read in detail. "Nothing planned Wed/Fri": digest of Sun 22 Nov (may be outdated).

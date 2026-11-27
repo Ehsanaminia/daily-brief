@@ -1,0 +1,79 @@
+Good morning, and welcome back to your Daily Brief. This is episode three, Wednesday, the twenty-fifth of November. Quick recap. Last time we learned that a stock is a small piece of ownership in a company. You can earn from the price going up, or from a dividend. And you can lose, because shareholders are paid last. Today we look at the markets, learn what a bond is, practice an interview answer, do a quiz, and finish with Myth versus Math. Let's go.
+
+[pause 1]
+
+Part one. The markets. First, an honest note. When I made this episode, the latest closing numbers in my data were still from last Friday, the twentieth. Monday's and Tuesday's numbers had not arrived. So I will use Friday, and I will not guess the rest.
+
+Today, let's look at something we haven't covered yet: currencies. A currency's price is simply how much of another currency you need to buy it. On Friday, one euro cost about one point one dollars. That barely moved, down two hundredths of one percent. And one dollar cost about one hundred and sixty Japanese yen, a little higher than the day before. So, on a day when stocks fell hard, the big currencies were quiet. That is useful to know. Not everything panics at once.
+
+Now bonds, which is today's lesson. On Thursday, the ten year American government bond paid a rate of about five point oh five percent. On Friday, it paid about four point nine one percent. The rate went down. Hold on to that, because by the end of today's lesson, you will know exactly what it means, and why it matters to anyone who owns that bond.
+
+Gold fell about four point six percent on Friday, to about three thousand five hundred and fifteen dollars an ounce, while Brent oil rose a little, to about ninety-three dollars a barrel. And in Europe, the Euro Stoxx 50, which tracks fifty of the biggest companies in the euro area, fell two point eight percent.
+
+So here is your professional habit for today. Look for what did not move as well as what did. A quiet currency market on a bad stock day tells you the stress, at least on Friday, was mostly in stocks, not everywhere.
+
+[pause 1.2]
+
+Part two. Today's lesson. What is a bond?
+
+Let's go back to your friend with the bakery. Last time, she sold slices of ownership. But there is another way for her to raise money. She can borrow it. Say she borrows one thousand dollars from you, for five years. She promises two things. One: every year, she pays you fifty dollars as interest. Two: after five years, she gives you your one thousand dollars back. That is a bond. A bond is a loan that is packaged so it can be bought and sold.
+
+Let me give you the three words every bond has. The first is the face value. That is the amount that gets paid back at the end. Here, one thousand dollars. The second is the coupon. That is the yearly interest payment, here fifty dollars, which is five percent of the face value. The third is the maturity. That is the date the loan ends and you get your money back. Here, five years from now. Face value, coupon, maturity. Say them with me once: face value, coupon, maturity.
+
+Who issues bonds? Governments do, because they need to borrow to pay for roads, schools and so on. The American government's bonds are called Treasuries. Companies do as well. The company that borrows is called the issuer, and you, the lender, are the bondholder.
+
+Compare this with a stock. A shareholder owns a piece of the company, and gets whatever is left. A bondholder is a lender, and has a contract. The company must pay the interest and the face value, whether it had a good year or a bad year. And if the company fails, lenders are paid before shareholders. That is why bonds are usually less risky than stocks. But less risky does not mean no risk. There are two risks to know today.
+
+The first is credit risk. The borrower might not pay you back. A very strong government is unlikely to fail, so its bonds pay a lower rate. A weaker company pays a higher rate, to make up for the danger. A higher rate is the price of higher risk. That is a rule you will see everywhere.
+
+The second risk is the one hidden in Friday's news, and it is the most important idea today. The price of a bond changes, and it moves opposite to the rate. Here is why.
+
+You hold the bond that pays fifty dollars a year, bought for one thousand. Now imagine that interest rates in the world go up, and a brand new bond, just as safe, pays sixty dollars a year for one thousand. Would anyone pay you one thousand dollars for your bond that only pays fifty? No. If you want to sell, you must lower the price, until the buyer's deal looks as good as a new bond. So when rates go up, the price of your existing bond goes down.
+
+Now the opposite. Rates fall, and new bonds pay only forty dollars a year. Your bond, which pays fifty, is now a nicer deal. Buyers will pay more than one thousand for it. So when rates go down, bond prices go up. Think of a see-saw. Rate on one side, price on the other. One goes up, the other goes down.
+
+How big is the move? It depends on how long until maturity. Take our fifty dollar bond. If the market rate rises to six percent, a bond with five years left would be worth about nine hundred and fifty-eight dollars. But a bond with thirty years left would be worth only about eight hundred and sixty-two. Longer bonds move more. In week eight, we'll learn the professional word for this, which is duration.
+
+Now go back to Friday. The ten year Treasury rate went from about five point oh five to four point nine one percent. The rate went down, so the price of those bonds went up, by roughly one percent. That is my rough estimate. So on a day when stocks fell almost four percent, government bonds went up a little. That is exactly why asset managers hold both stocks and bonds. When one falls, the other may cushion it. We will study that idea, called diversification, in week three.
+
+And one last thing. If you hold the bond until maturity, you still get your face value back, whatever the price did in between. The price only matters if you sell early.
+
+[pause 1.2]
+
+Part three. Say it like a professional. Someone asks: what is a bond? Remember our pattern. What it is, how you earn, what the risk is. Here is a strong answer. A bond is a loan to a government or a company. The investor earns regular interest, called the coupon, and gets the face value back at maturity. The main risks are that the borrower fails to pay, and that bond prices fall when interest rates rise. Now say that out loud, in your own words, in about thirty seconds.
+
+[pause 25]
+
+Good. And here is a bonus line that makes interviewers smile. When rates go up, bond prices go down. It's a see-saw.
+
+[pause 1.2]
+
+Part four. Quiz. Question one. Name the three words every bond has.
+
+[pause 6]
+
+Face value, coupon, and maturity. Question two. If interest rates in the world go up, what happens to the price of a bond you already own?
+
+[pause 6]
+
+It goes down. The see-saw. Question three. Which usually pays a higher rate, a very strong government or a weaker company, and why?
+
+[pause 7]
+
+The weaker company, because a higher rate is the price of higher risk. And a bonus question from last time. Name the two ways to make money from a stock.
+
+[pause 5]
+
+The price goes up, or the company pays a dividend. Well done.
+
+[pause 1.2]
+
+Last part. Myth versus Math. Here are the latest numbers, from the weekly report of the twenty-second of November. Your YouTube channel has four subscribers, one thousand five hundred and sixty total views, and nineteen videos. The standout is your video, Does the S and P 500 Beat a World Portfolio? It has about four hundred and eighty views in four days, which is more than a hundred a day, far ahead of the others. The lesson: that kind of question, comparing something people know with something they don't, is working. Think about a follow-up.
+
+You also made a video, Can Government Bonds Lose Money? It has only three views so far. After today's lesson, you know the answer is yes, if rates rise and you sell early. It may be worth sharing again.
+
+On the plan: the Sunday check showed nothing planned for this Wednesday or Friday, but there is a new script draft waiting for your approval, about whether you need a lot of money to start investing. Please take a look. Two small items. The Buffer statistics are missing because the connection lacks a permission called insights read. And your Instagram numbers are still old, so please send a fresh screenshot.
+
+[pause 1]
+
+Tomorrow, we'll learn about funds and E T Fs, which is how most people actually invest. Have a good day. This is for education only, and it is not financial advice. See you tomorrow.

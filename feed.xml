@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>Daily Brief</title>
+    <link>https://ehsanaminia.github.io/daily-brief/</link>
+    <language>en</language>
+    <description>A daily coaching podcast: markets news in plain English, one lesson on the way to a career in asset management, a quiz, and a Myth vs Math check-in. Educational, not financial advice.</description>
+    <itunes:author>Daily Brief</itunes:author>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:category text="Business"/>
+    <item>
+      <title>005: Week 1 review</title>
+      <description>The week in the markets, a rapid-fire vocabulary sprint of 18 terms, your first big question to answer out loud, and the plan for next week.</description>
+      <pubDate>Fri, 27 Nov 2026 06:00:00 +0000</pubDate>
+      <guid isPermaLink="false">daily-brief-005</guid>
+      <enclosure url="https://ehsanaminia.github.io/daily-brief/audio/daily-brief-005.mp3" length="3363134" type="audio/mpeg"/>
+      <itunes:duration>560</itunes:duration>
+      <itunes:episode>5</itunes:episode>
+    </item>
+    <item>
+      <title>004: Funds and ETFs</title>
+      <description>A wild three days for stocks, what a fund and an ETF are, why fees matter, interview practice, a quiz, and what the new Myth vs Math video rules mean.</description>
+      <pubDate>Thu, 26 Nov 2026 06:00:00 +0000</pubDate>
+      <guid isPermaLink="false">daily-brief-004</guid>
+      <enclosure url="https://ehsanaminia.github.io/daily-brief/audio/daily-brief-004.mp3" length="3640767" type="audio/mpeg"/>
+      <itunes:duration>606</itunes:duration>
+      <itunes:episode>4</itunes:episode>
+    </item>
+    <item>
+      <title>003: What is a bond?</title>
+      <description>Currencies and bond yields in the news, what a bond is and why its price and rate move in opposite directions, interview practice, a quiz, and your Myth vs Math numbers.</description>
+      <pubDate>Wed, 25 Nov 2026 06:00:00 +0000</pubDate>
+      <guid isPermaLink="false">daily-brief-003</guid>
+      <enclosure url="https://ehsanaminia.github.io/daily-brief/audio/daily-brief-003.mp3" length="3503104" type="audio/mpeg"/>
+      <itunes:duration>583</itunes:duration>
+      <itunes:episode>3</itunes:episode>
+    </item>
+    <item>
+      <title>002: What is a stock?</title>
+      <description>A rough week for stocks in plain English, what a stock (a share) really is, a quiz, and a Myth vs Math check-in.</description>
+      <pubDate>Tue, 24 Nov 2026 06:00:00 +0000</pubDate>
+      <guid isPermaLink="false">daily-brief-002</guid>
+      <enclosure url="https://ehsanaminia.github.io/daily-brief/audio/daily-brief-002.mp3" length="3484961" type="audio/mpeg"/>
+      <itunes:duration>580</itunes:duration>
+      <itunes:episode>2</itunes:episode>
+    </item>
+    <item>
+      <title>001: What is an asset manager? (pilot)</title>
+      <description>Pilot episode. Friday's sell-off in plain English, what an asset manager does, a quiz, and a Myth vs Math check-in.</description>
+      <pubDate>Sat, 21 Nov 2026 06:00:00 +0000</pubDate>
+      <guid isPermaLink="false">daily-brief-001</guid>
+      <enclosure url="https://ehsanaminia.github.io/daily-brief/audio/daily-brief-001.mp3" length="2107906" type="audio/mpeg"/>
+      <itunes:duration>351</itunes:duration>
+      <itunes:episode>1</itunes:episode>
+    </item>
+  </channel>
+</rss>
