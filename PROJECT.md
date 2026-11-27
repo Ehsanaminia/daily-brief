@@ -37,6 +37,7 @@ News week in review, vocabulary and question review of the week, then **the week
 - One thread (session) per episode, so Ehsan can comment on each. Concise answers, one step at a time.
 
 ## How an episode is made
+Since 27 Nov 2026 a nightly scheduled run does this automatically (WRITER.md, AUTOMATION.md); audio and feed are built by GitHub Actions, not by hand. The steps below are for a manual episode.
 1. Check STATUS.md and CURRICULUM.md for the next topic.
 2. Re-fetch `prices.csv` (News Lab) and, on Fridays, the Myth vs Math `tracker/` and `ideas/` files from their `main` branches.
 3. Write `episodes/NNN/script.txt` (blank line between paragraphs, `[pause 7]` for silence), `meta.json`, `notes.md`.
