@@ -21,7 +21,7 @@ def silence(path, seconds):
                     "-t", str(seconds), str(path)], check=True)
 
 
-async def speak(text, mp3, tries=6):
+async def speak(text, mp3, tries=8):
     err = None
     for n in range(tries):
         try:
@@ -29,8 +29,23 @@ async def speak(text, mp3, tries=6):
             return
         except Exception as e:  # voice service sometimes rate-limits: back off and retry
             err = e
-            await asyncio.sleep(3 * 2 ** n)
+            print(f"  voice service error ({type(e).__name__}), retry {n + 1}/{tries}", flush=True)
+            await asyncio.sleep(min(60, 5 * 2 ** n))
     raise err
+
+
+MAX_CHARS = 2500  # fewer, larger requests: the voice service throttles many small ones
+
+
+def batch(items):
+    """Join neighbouring paragraphs (up to MAX_CHARS) into one voice request; pauses stay where they are."""
+    out = []
+    for kind, val in items:
+        if kind == "s" and out and out[-1][0] == "s" and len(out[-1][1]) + len(val) < MAX_CHARS:
+            out[-1] = ("s", out[-1][1] + "\n\n" + val)
+        else:
+            out.append((kind, val))
+    return out
 
 
 def parse(text):
@@ -50,7 +65,7 @@ def parse(text):
 async def main(ep):
     ep = pathlib.Path(ep).resolve()
     meta = json.loads((ep / "meta.json").read_text())
-    items = parse((ep / "script.txt").read_text())
+    items = batch(parse((ep / "script.txt").read_text()))
     work = pathlib.Path(tempfile.mkdtemp(prefix="brief-"))
     files = []
     for i, (kind, val) in enumerate(items):
@@ -58,6 +73,7 @@ async def main(ep):
         if kind == "s":
             mp3 = work / f"{i:03d}.mp3"
             await speak(val, mp3)
+            await asyncio.sleep(1.5)  # be gentle with the free voice service
             subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(mp3), "-ar", "24000", "-ac", "1", str(wav)], check=True)
             files.append(wav)
             gap = work / f"{i:03d}g.wav"; silence(gap, GAP); files.append(gap)

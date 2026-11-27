@@ -9,6 +9,9 @@ on:
     branches: [main]
     paths: ["episodes/**", "build/**", "assets/**", ".github/workflows/publish.yml"]
   workflow_dispatch: {}
+  schedule:
+    # safety net: every 20 minutes between 02:00 and 05:59 UTC, retry episodes whose audio is still missing
+    - cron: "*/20 2-5 * * *"
 
 permissions:
   contents: write   # create releases, save audio info back into meta.json
@@ -56,3 +59,6 @@ jobs:
           path: _site
       - id: deploy
         uses: actions/deploy-pages@v4
+      - name: Report episodes that could not be built
+        run: |
+          if [ -s failed.txt ]; then echo "::error::Some episodes were not built (retried automatically):"; cat failed.txt; exit 1; fi

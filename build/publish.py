@@ -1,8 +1,9 @@
 """Studio step, run by GitHub Actions (.github/workflows/publish.yml).
 For every episode whose meta.json says "publish": true and has no "audio_url" yet:
-  1. build the MP3 (build_episode.py), or reuse audio/daily-brief-NNN.mp3 if it is already there,
+  1. build the MP3 (build_episode.py), or reuse one already in audio/ or already uploaded to its Release,
   2. upload it to a GitHub Release named ep-NNN (keeps big files out of the repo),
   3. write audio_url, audio_bytes and audio_seconds back into meta.json.
+One failing episode does not stop the others; failures are listed in failed.txt and the next run retries them.
 Episodes without "publish": true are never built (a draft stays a draft).
 Needs: GH_TOKEN and GITHUB_REPOSITORY (both set automatically inside Actions), ffmpeg, edge-tts."""
 import json, os, pathlib, subprocess, sys
@@ -15,14 +16,10 @@ def run(*cmd):
     subprocess.run(cmd, check=True)
 
 
-changed = 0
-for meta_path in sorted((ROOT / "episodes").glob("*/meta.json")):
-    meta = json.loads(meta_path.read_text())
-    if not meta.get("publish") or meta.get("audio_url"):
-        continue
+def publish(meta_path, meta):
     n = meta["number"]
-    mp3 = ROOT / "audio" / f"daily-brief-{n:03d}.mp3"
     tag = f"ep-{n:03d}"
+    mp3 = ROOT / "audio" / f"daily-brief-{n:03d}.mp3"
     if not mp3.exists():
         # an earlier run may have uploaded the MP3 but failed before saving meta.json: reuse it
         mp3.parent.mkdir(exist_ok=True)
@@ -41,6 +38,19 @@ for meta_path in sorted((ROOT / "episodes").glob("*/meta.json")):
     meta.update(audio_url=f"https://github.com/{REPO}/releases/download/{tag}/{mp3.name}",
                 audio_bytes=mp3.stat().st_size, audio_seconds=secs)
     meta_path.write_text(json.dumps(meta, ensure_ascii=False) + "\n")
-    changed += 1
-    print(f"published {tag}: {secs // 60} min, {mp3.stat().st_size / 1e6:.1f} MB")
-print(f"{changed} episode(s) published")
+    print(f"published {tag}: {secs // 60} min, {mp3.stat().st_size / 1e6:.1f} MB", flush=True)
+
+
+done, failed = 0, []
+for meta_path in sorted((ROOT / "episodes").glob("*/meta.json")):
+    meta = json.loads(meta_path.read_text())
+    if not meta.get("publish") or meta.get("audio_url"):
+        continue
+    try:
+        publish(meta_path, meta)
+        done += 1
+    except Exception as e:  # keep going: the other episodes still get published
+        failed.append(f"{meta['number']:03d} {meta['title']}: {e}")
+        print(f"FAILED {meta['number']:03d}: {e}", flush=True)
+print(f"{done} episode(s) published, {len(failed)} failed")
+(ROOT / "failed.txt").write_text("".join(f + "\n" for f in failed))
