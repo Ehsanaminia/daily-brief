@@ -18,6 +18,8 @@ Slots from CURRICULUM.md: A and B new lessons; C new lesson Mon/Wed, review Tue/
 
 ## 3. Write each episode
 - Pace (Ehsan, 27 Nov): he has a Master of Finance; basics move fast, plain English stays. Teach at the depth of the CFA/FRM topic, with one real example and real data where possible.
+- Style (Ehsan, 28 Nov): teach **mechanisms and links**, not math. Say what goes up, what goes down, why, and how it connects to rates, stocks, bonds, currencies and gold. No spoken formulas and no step-by-step calculations; examples use round numbers with the result stated ("a thousand at 7 percent roughly doubles in ten years"). At most two numbers per sentence. Formulas and calculations go in notes.md only.
+- Questions (Ehsan, 28 Nov): only ask what was taught. Before writing the quiz and interview corner, list for each question the episode and line that taught it (in notes.md). If it wasn't taught, teach it first or ask something else. The teaser must match the next lesson in STATUS.md.
 - `script.txt` (blank line between paragraphs, `[pause N]` for silence), `notes.md` (every number and claim with its source), `meta.json`:
   `{"number": N, "title": "...", "date": "YYYY-MM-DD", "slot": "A", "description": "...", "publish": false}`
 - 1,700 to 1,900 spoken words (about 10 minutes at +12%). Follow the episode order in PROJECT.md. Only one slot per day carries the markets news (A); B and C open with a one-line link to A instead.

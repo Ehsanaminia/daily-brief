@@ -24,6 +24,8 @@ No Myth vs Math segment on these days (Ehsan, 27 Nov): the time goes to the less
 News week in review, vocabulary and question review of the week, then **the weekly Myth vs Math report** (stats, comments, what worked) plus **growth ideas** (concrete: topic tests, hooks, posting, comments, cross-posting). Weekly, not daily.
 
 ## Content rules
+- **Mechanisms, not math (Ehsan, 28 Nov):** explain how things connect (this goes up, that goes down, why); round-number examples with stated results; no spoken formulas or worked calculations.
+- **Only ask what was taught (Ehsan, 28 Nov):** every quiz and interview question must be answerable from this or earlier lessons; the critic checks this.
 - **Asset classes first**: each class is taught beginner to professional, then how it interacts with the others, then how to buy and sell it (where, which instruments, costs, liquidity, settlement, taxes) and what to consider before a transaction (use PRETRADE_CHECKLIST.md). Teach considerations, never "buy this now".
 - **Interview questions inside** every lesson day; collect them in INTERVIEW_BANK.md.
 - **Free tools only** (edge-tts, ffmpeg, GitHub Pages). No paid services.

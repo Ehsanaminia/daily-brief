@@ -13,12 +13,15 @@ It gets only `script.txt`, `notes.md` and the data. Its job is to try to prove t
 2. **Numbers.** Recompute every number from the raw data with its own script. Spoken number must equal the data (rounding included). Dates must say "as of".
 3. **Causes.** Any "why the market moved" without a published source is a FAIL.
 4. **Strongest counter-view.** Name the best-known scholar or practitioner view that disagrees and check if the script is fair to it.
-5. **Teaching.** Is the example correct and clear for a beginner? Is a term used before it is taught?
-6. **Language.** Grammar, typos, words the voice will mispronounce, numbers written so the voice reads them right.
-7. **Rules.** No advice on what to buy, ends with "Educational, not financial advice", no personal data.
+5. **Teaching.** Is the example correct and clear? Is a term used before it is taught?
+6. **Questions match teaching (Ehsan, 28 Nov).** For every quiz question, interview question and model answer: name the episode and line where everything needed to answer it was taught (this episode or an earlier one; check GLOSSARY.md and the earlier scripts). Anything asked but not taught is a FAIL: either teach it in the lesson or change the question. A teaser must match what the next lesson really covers.
+7. **Mechanisms, not math (Ehsan, 28 Nov).** FAIL any spoken formula, step-by-step calculation, or more than two numbers in one sentence. FIX any lesson that doesn't explain the mechanism: what goes up, what goes down, why, and how it connects to other assets. Examples use round numbers with the result stated ("about double"), never worked arithmetic. Formulas may appear only in notes.md.
+8. **Language.** Grammar, typos, words the voice will mispronounce, numbers written so the voice reads them right.
+9. **Rules.** No advice on what to buy, ends with "Educational, not financial advice", no personal data.
 
 ## Report: `CRITIC_REPORT.md` in the episode folder
 | # | Claim or line | Check and source | Result (PASS / FIX / FAIL) | Exact fix |
+Plus a second table for check 6: | Question | Where it was taught (episode, quote) | PASS / FAIL |
 Plus "not proven" objections (listed, they change nothing).
 
 ## Rules
