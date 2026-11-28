@@ -6,6 +6,26 @@ import asyncio, json, os, pathlib, re, subprocess, sys, tempfile
 
 import edge_tts
 
+BACKUP = os.environ.get("VOICE_BACKUP") == "1"  # set by publish.py when the Microsoft voice keeps failing
+BACKUP_VOICE = "en_US-ryan-high"  # Piper: free, open source, runs offline on the build machine
+_piper = None
+
+
+def speak_backup(text, wav):
+    """Offline backup voice (Piper). Writes a wav file."""
+    global _piper
+    import wave
+    from piper import PiperVoice, SynthesisConfig
+    from piper.download_voices import download_voice
+    if _piper is None:
+        d = pathlib.Path.home() / ".piper"
+        d.mkdir(exist_ok=True)
+        if not (d / f"{BACKUP_VOICE}.onnx").exists():
+            download_voice(BACKUP_VOICE, d)
+        _piper = PiperVoice.load(d / f"{BACKUP_VOICE}.onnx")
+    with wave.open(str(wav), "wb") as w:
+        _piper.synthesize_wav(text, w, syn_config=SynthesisConfig(length_scale=0.9))
+
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 VOICE = "en-US-AndrewMultilingualNeural"
 RATE = "+12%"  # Ehsan, 27 Nov: 5 to 10% faster than the +4% used in eps 1-5
@@ -71,10 +91,13 @@ async def main(ep):
     for i, (kind, val) in enumerate(items):
         wav = work / f"{i:03d}.wav"
         if kind == "s":
-            mp3 = work / f"{i:03d}.mp3"
-            await speak(val, mp3)
-            await asyncio.sleep(1.5)  # be gentle with the free voice service
-            subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(mp3), "-ar", "24000", "-ac", "1", str(wav)], check=True)
+            src = work / f"{i:03d}.src.{'wav' if BACKUP else 'mp3'}"
+            if BACKUP:
+                speak_backup(val, src)
+            else:
+                await speak(val, src)
+                await asyncio.sleep(1.5)  # be gentle with the free voice service
+            subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(src), "-ar", "24000", "-ac", "1", str(wav)], check=True)
             files.append(wav)
             gap = work / f"{i:03d}g.wav"; silence(gap, GAP); files.append(gap)
         else:

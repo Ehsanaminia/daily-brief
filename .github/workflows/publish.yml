@@ -25,9 +25,6 @@ concurrency:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -38,7 +35,7 @@ jobs:
       - name: Install tools
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
-          pip install edge-tts==7.3.1 pillow==11.3.0
+          pip install edge-tts==7.3.1 pillow==11.3.0 piper-tts==1.8.0
       - name: Build and upload new episodes
         env:
           GH_TOKEN: ${{ github.token }}
@@ -57,8 +54,17 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
-      - id: deploy
-        uses: actions/deploy-pages@v4
       - name: Report episodes that could not be built
         run: |
-          if [ -s failed.txt ]; then echo "::error::Some episodes were not built (retried automatically):"; cat failed.txt; exit 1; fi
+          if [ -s failed.txt ]; then echo "::warning::Some episodes were not built (retried automatically):"; cat failed.txt; fi
+
+  # separate job, as in GitHub's own Pages template (the one-job version sometimes could not find the site)
+  deploy:
+    needs: publish
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4

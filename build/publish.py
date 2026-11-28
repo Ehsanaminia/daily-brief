@@ -3,6 +3,7 @@ For every episode whose meta.json says "publish": true and has no "audio_url" ye
   1. build the MP3 (build_episode.py), or reuse one already in audio/ or already uploaded to its Release,
   2. upload it to a GitHub Release named ep-NNN (keeps big files out of the repo),
   3. write audio_url, audio_bytes and audio_seconds back into meta.json.
+If the Microsoft voice keeps failing, the offline backup voice (Piper) is used and meta.json says "voice": "backup".
 One failing episode does not stop the others; failures are listed in failed.txt and the next run retries them.
 Episodes without "publish": true are never built (a draft stays a draft).
 Needs: GH_TOKEN and GITHUB_REPOSITORY (both set automatically inside Actions), ffmpeg, edge-tts."""
@@ -26,7 +27,14 @@ def publish(meta_path, meta):
         subprocess.run(["gh", "release", "download", tag, "-p", mp3.name, "-D", str(mp3.parent), "-R", REPO],
                        capture_output=True)
     if not mp3.exists():
-        run(sys.executable, str(ROOT / "build" / "build_episode.py"), str(meta_path.parent))
+        try:
+            run(sys.executable, str(ROOT / "build" / "build_episode.py"), str(meta_path.parent))
+        except subprocess.CalledProcessError:
+            # Microsoft's free voice kept refusing: use the offline backup voice so the episode still goes out
+            print(f"{tag}: main voice failed, building with the backup voice", flush=True)
+            subprocess.run([sys.executable, str(ROOT / "build" / "build_episode.py"), str(meta_path.parent)],
+                           check=True, env={**os.environ, "VOICE_BACKUP": "1"})
+            meta["voice"] = "backup"
     secs = int(float(subprocess.check_output(
         ["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(mp3)])))
     # create the release, or add the file to it if a previous run already created it
