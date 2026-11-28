@@ -12,6 +12,7 @@ Read first: PROJECT.md, CURRICULUM.md (format and order), SOURCES.md, CRITIC.md,
 
 ## 2. Plan today's 3 episodes
 Slots from CURRICULUM.md: A and B new lessons; C new lesson Mon/Wed, review Tue/Thu; Friday A week review + vocabulary sprint, B weekly Myth vs Math report + growth ideas (read `mythvsmath` main: `tracker/`, `ideas/`), C mock interview.
+- Corrections: if STATUS.md Open items lists corrections for the next slot A, include them in slot A and remove the item.
 - Next lessons: the "Next episodes" list in STATUS.md, else the next untaught lessons in CURRICULUM.md order.
 - Numbers continue from the highest existing episode number. One folder per episode: `episodes/NNN/`.
 - If a folder for today already exists **without** `"publish": true` (for example 006 on Mon 30 Nov), it is today's slot A: keep its content, refresh every market number from today's data, and send it through the critic like a new episode. Never touch an episode that already has `"publish": true`.
