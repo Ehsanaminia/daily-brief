@@ -3,14 +3,16 @@
 Version 4, after critic round 1 (report: `CRITIC_REPORT_curriculum_v4.md`, 49 findings; all FIX/ADD/MOVE items applied, see the change log at the end).
 Built from: CFA Program Level I 2027 topic outline, Level III 2027 core and pathway outlines (CFA Institute), Level II 2026 topic outline (CFA Institute; module titles cross-checked with prep providers), GARP FRM 2026 Study Guide (Part I and II), plus desk practice, EU fund rules and firm leadership.
 
-## Format (Ehsan, 27 Nov): three 10-minute episodes each weekday
-| Slot | When | Content |
-|---|---|---|
-| A | Way to work | New lesson |
-| B | Way to the gym | New lesson (always new content; often the applied side: real example with real data, case, "how to buy and sell it") |
-| C | In the gym | Mon and Wed: third new lesson. Tue and Thu: review (market headlines from News Lab data, quiz on today + 1 week ago + 1 month ago, one interview question) |
-Friday: A = week review and vocabulary sprint, B = weekly Myth vs Math report and growth ideas, C = mock interview (5 questions).
-**10 new lessons a week** (Ehsan, 27 Nov: A and B Mon to Thu, plus C on Mon and Wed). The "weeks" below are blocks of 8 lessons, so the course moves faster than the block numbers. Each lesson: plain definition, real-life example, real data where it exists (dated, sourced), one "what a pro checks", quiz and interview questions. Math lessons get a free one-page formula card in the show notes.
+## Format (Ehsan, 28 Nov): four 10-minute episodes every day
+| Slot | Content |
+|---|---|
+| A | New lesson, with the markets news from News Lab data (and any queued corrections) |
+| B | New lesson (often the applied side: real example with real data, case, "how to buy and sell it") |
+| C | New lesson |
+| D | Review: quiz on today + 1 week ago + 1 month ago (mechanism questions), one interview question, the day's links between topics |
+Friday: A = week review and vocabulary sprint, B = weekly Myth vs Math report and growth ideas, C = new lesson, D = mock interview (5 questions).
+Saturday and Sunday follow the daily plan (markets closed: say so, use the last close).
+**About 19 new lessons a week** (3 a day, 1 on Friday). The "weeks" below are blocks of 8 lessons, so the course moves much faster than the block numbers: about 430 lessons take roughly 23 weeks, ending around June 2027 with buffer. Each lesson: plain definition, mechanism (what moves what, and why), a real-life example with round numbers, real data where it exists (dated, sourced), one "what a pro checks", quiz and interview questions.
 Ethics runs as a strand: one Standard or case every few weeks, not a single block.
 
 Tags: [L1] [L2] [L3] CFA level, [PM] [PMk] Level III pathways, [F1] [F2] FRM Part I / II, [EU] European rules, [Desk] daily practice, [Lead] firm leadership.
@@ -127,7 +129,7 @@ The Fund Manager repo holds Ehsan's own 120-lesson, 24-week plan (CFA Level I ta
 - **Careers (W59 to W60):** the experienced-hire career-change story; networking plan; consulting case interviews for the Big 4; a house view on markets; the mock superday.
 
 ## Size and honesty
-- About 430 new lessons (some later blocks are listed by theme and get their full lessons when planned). At 10 a week that is about 43 weeks; with 4 to 6 buffer weeks (holidays, big market days) it ends around November 2027.
+- About 430 new lessons (some later blocks are listed by theme and get their full lessons when planned). At about 19 a week that is roughly 23 weeks; with buffer weeks it ends around June 2027.
 - A 10-minute episode builds understanding and vocabulary. It does not replace exam study: CFA Institute says successful candidates report spending over 300 hours on average per level, and GARP's 2026 candidate guide says candidates spend about 275 hours studying on average. The podcast is the companion; books and question banks are the exam prep.
 - Scope: the CFA Level III Portfolio Management and Private Markets pathways are covered in depth; the Private Wealth pathway only in W51.
 - Facts that go stale (rules, dates, rates) are re-checked before each episode and said "as of".

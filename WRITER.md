@@ -1,17 +1,17 @@
-# WRITER: the nightly run (Mon to Fri, 02:37 Berlin)
+# WRITER: the nightly run (every day, 01:47 Berlin)
 
 Ehsan, 27 Nov 2026: **fully automatic**. The writer pushes straight to `main` after the critic pass; GitHub Actions (`.github/workflows/publish.yml`) then builds the MP3s, stores them in Releases and updates the feed. Nobody approves in between, so the critic pass is the only gate. Mistakes are corrected in the next episode, never by re-rendering.
 
 Read first: PROJECT.md, CURRICULUM.md (format and order), SOURCES.md, CRITIC.md, STATUS.md, GLOSSARY.md, INTERVIEW_BANK.md, PRETRADE_CHECKLIST.md.
 
 ## 1. Set up
-- Today = the date in Europe/Berlin. Weekends: do nothing.
+- Today = the date in Europe/Berlin. Runs every day; on weekends markets are closed: say so and use the last close.
 - `git clone` (or pull) `Ehsanaminia/daily-brief`, `Ehsanaminia/market-news-lab` and `Ehsanaminia/fund-manager`, all `main`. For every lesson, read the matching lesson in `fund-manager/docs/curriculum.md` (and `docs/plan.md`) and use its examples and interview question where they fit (Ehsan, 27 Nov: required supporting source, never the only one). Work on `main` of daily-brief.
 - Re-fetch `market-news-lab/data/prices.csv` now; rows can be revised. Note the newest close per market. Never guess a missing day; say which close you use.
 - Check the last "Publish episodes" run and Releases: if yesterday's episodes did not get an `audio_url`, say so in STATUS.md (Open items) and in the run summary.
 
-## 2. Plan today's 3 episodes
-Slots from CURRICULUM.md: A and B new lessons; C new lesson Mon/Wed, review Tue/Thu; Friday A week review + vocabulary sprint, B weekly Myth vs Math report + growth ideas (read `mythvsmath` main: `tracker/`, `ideas/`), C mock interview.
+## 2. Plan today's 4 episodes (Ehsan, 28 Nov)
+Slots from CURRICULUM.md: A, B and C new lessons (A carries the markets news); D review (spaced quiz, interview question). Friday: A week review + vocabulary sprint, B weekly Myth vs Math report + growth ideas (read `mythvsmath` main: `tracker/`, `ideas/`), C new lesson, D mock interview.
 - Corrections: if STATUS.md Open items lists corrections for the next slot A, include them in slot A and remove the item.
 - Next lessons: the "Next episodes" list in STATUS.md, else the next untaught lessons in CURRICULUM.md order.
 - Numbers continue from the highest existing episode number. One folder per episode: `episodes/NNN/`.
@@ -23,7 +23,7 @@ Slots from CURRICULUM.md: A and B new lessons; C new lesson Mon/Wed, review Tue/
 - Questions (Ehsan, 28 Nov): only ask what was taught. Before writing the quiz and interview corner, list for each question the episode and line that taught it (in notes.md). If it wasn't taught, teach it first or ask something else. The teaser must match the next lesson in STATUS.md.
 - `script.txt` (blank line between paragraphs, `[pause N]` for silence), `notes.md` (every number and claim with its source), `meta.json`:
   `{"number": N, "title": "...", "date": "YYYY-MM-DD", "slot": "A", "description": "...", "publish": false}`
-- 1,700 to 1,900 spoken words (about 10 minutes at +12%). Follow the episode order in PROJECT.md. Only one slot per day carries the markets news (A); B and C open with a one-line link to A instead.
+- 1,700 to 1,900 spoken words (about 10 minutes at +12%). Follow the episode order in PROJECT.md. Only one slot per day carries the markets news (A); B, C and D open with a one-line link to A instead.
 - Write numbers the way the voice should say them. End every episode with "Educational, not financial advice."
 
 ## 4. Critic (CRITIC.md)

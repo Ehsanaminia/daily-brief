@@ -18,7 +18,7 @@
 - Own project (own repo) for the podcast, and one thread (session) per episode.
 
 ## Next episodes
-- Next run (Sun 29 Nov): A = 009 Return types and money- vs time-weighted return, B = 010 Benchmarks, C = 011 Mean, standard deviation, volatility (curriculum v4 W2 #4 to #6). Then W2 #7 distributions, #8 correlation/covariance/beta, then W3. Ep 008 teaser promises "returns" next.
+- Next run (Sun 29 Nov, 4 episodes from now on): A = 009 Return types and money- vs time-weighted return, B = 010 Benchmarks, C = 011 Mean, standard deviation, volatility (curriculum v4 W2 #4 to #6), D = 012 Review. Then W2 #7 distributions, #8 correlation/covariance/beta, then W3. Ep 008 teaser promises "returns" next.
 
 ## Open items
 - **Corrections for the next slot A episode (Mon-Thu, from the 28 Nov audit of eps 1 to 8, AUDIT in project files):** teach these in a short "Fixing gaps" segment right after the news, in mechanism style, then delete this item.
