@@ -1,6 +1,6 @@
 """Rebuild feed.xml and index.html from episodes/*/meta.json (newest 30 episodes). usage: make_feed.py [out_dir]
 Audio comes from meta.json (audio_url/audio_bytes/audio_seconds, set by publish.py) or, for old episodes, audio/*.mp3.
-Optional meta "slot": "A", "B" or "C" orders the 3 episodes of one day (A first)."""
+Optional meta "slot": "A" to "D" orders the 4 episodes of one day (A first)."""
 import datetime as dt, email.utils, json, pathlib, subprocess, sys
 from xml.sax.saxutils import escape
 
@@ -34,8 +34,8 @@ eps, old = eps[:KEEP], eps[KEEP:]   # older episodes stay in GitHub Releases, ju
 
 items, rows = [], []
 for m, url, size, secs in eps:
-    # 03:00 UTC on the episode date; slot A/B/C one minute apart so AntennaPod plays A, then B, then C
-    when = dt.datetime.fromisoformat(m["date"]).replace(hour=3, minute="ABC".find(m.get("slot", "A")) % 3, tzinfo=dt.timezone.utc)
+    # 03:00 UTC on the episode date; slots A to D one minute apart so AntennaPod plays A, B, C, then D
+    when = dt.datetime.fromisoformat(m["date"]).replace(hour=3, minute=max(0, "ABCD".find(m.get("slot", "A"))), tzinfo=dt.timezone.utc)
     title = f"{m['number']:03d}: {m['title']}"
     items.append(f"""    <item>
       <title>{escape(title)}</title>

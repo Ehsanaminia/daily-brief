@@ -7,7 +7,7 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 FONTS = ROOT / "assets" / "fonts"
 NAVY_TOP, NAVY_BOTTOM = (8, 22, 38), (16, 52, 78)
 WHITE, MUTED, GOLD = (245, 247, 250), (150, 175, 198), (242, 184, 75)
-SLOT_COLOR = {"A": GOLD, "B": (64, 200, 180), "C": (240, 120, 100)}
+SLOT_COLOR = {"A": GOLD, "B": (64, 200, 180), "C": (240, 120, 100), "D": (150, 130, 230)}
 # a fixed, made-up price path used only as decoration (not market data)
 PATH = [0.30, 0.34, 0.31, 0.38, 0.36, 0.44, 0.41, 0.50, 0.47, 0.56, 0.53, 0.62, 0.66, 0.61, 0.72, 0.70, 0.80, 0.86]
 
